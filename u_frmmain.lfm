@@ -6,6 +6,7 @@ object frmMain: TfrmMain
   Caption = 'frmMain'
   ClientHeight = 240
   ClientWidth = 320
+  OnCreate = FormCreate
   LCLVersion = '1.2.4.0'
   object DBGrid1: TDBGrid
     Left = 8

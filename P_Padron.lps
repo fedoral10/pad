@@ -13,7 +13,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="31" Y="10"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -23,11 +23,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="u_FrmMain"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="37" Y="8"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="28"/>
+        <CursorPos X="30" Y="45"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -35,19 +36,18 @@
         <Filename Value="u_conexion.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="u_Conexion"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="11"/>
-        <CursorPos X="53" Y="29"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="10"/>
+        <CursorPos X="11" Y="25"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit2>
     </Units>
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="18" HistoryIndex="17">
+    <JumpHistory Count="25" HistoryIndex="24">
       <Position1>
         <Filename Value="u_conexion.pas"/>
         <Caret Line="37" Column="28" TopLine="16"/>
@@ -120,6 +120,34 @@
         <Filename Value="u_conexion.pas"/>
         <Caret Line="16" Column="36" TopLine="8"/>
       </Position18>
+      <Position19>
+        <Filename Value="u_conexion.pas"/>
+        <Caret Line="33" Column="6" TopLine="23"/>
+      </Position19>
+      <Position20>
+        <Filename Value="u_conexion.pas"/>
+        <Caret Line="49" Column="61" TopLine="28"/>
+      </Position20>
+      <Position21>
+        <Filename Value="u_conexion.pas"/>
+        <Caret Line="46" Column="62" TopLine="32"/>
+      </Position21>
+      <Position22>
+        <Filename Value="u_conexion.pas"/>
+        <Caret Line="28" Column="23" TopLine="18"/>
+      </Position22>
+      <Position23>
+        <Filename Value="u_frmmain.pas"/>
+        <Caret Line="37" Column="30" TopLine="23"/>
+      </Position23>
+      <Position24>
+        <Filename Value="u_frmmain.pas"/>
+        <Caret Line="39" Column="30" TopLine="20"/>
+      </Position24>
+      <Position25>
+        <Filename Value="u_frmmain.pas"/>
+        <Caret Line="19" Column="43" TopLine="19"/>
+      </Position25>
     </JumpHistory>
   </ProjectSession>
   <EditorMacros Count="0"/>

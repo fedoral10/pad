@@ -9,13 +9,12 @@ uses
 
 type
   TConexion = class(TObject)
-        omDataSource: TDataSource;
+  private
+    omDataSource: TDataSource;
     //omGrid: TDBGrid;
     omConn: TSQLite3Connection;
     omSQLQuery: TSQLQuery;
     omTransaccion: TSQLTransaction;
-  private
-
   public
     procedure InicializaConexion;
     function EjecutaConsulta(sql: string): TDataSource;
@@ -26,10 +25,11 @@ implementation
 procedure TConexion.InicializaConexion;
 begin
   try
-    self.omTransaccion := TSQLTransaction.Create(Nil);
+    self.omTransaccion := TSQLTransaction.Create(nil);
     self.omConn := TSQLite3Connection.Create(nil);
     self.omDataSource := TDataSource.Create(nil);
     self.omSQLQuery := TSQLQuery.Create(nil);
+
     self.omConn.DatabaseName := 'C:\Users\jorge.potosme\pad\pad.db';
     self.omConn.Transaction := Self.omTransaccion;
     self.omSQLQuery.DataBase := Self.omConn;
