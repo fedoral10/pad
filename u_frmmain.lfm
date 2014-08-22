@@ -1,0 +1,28 @@
+object frmMain: TfrmMain
+  Left = 282
+  Height = 240
+  Top = 233
+  Width = 320
+  Caption = 'frmMain'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.2.4.0'
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 108
+    Top = 8
+    Width = 296
+    Color = clWindow
+    Columns = <>
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 104
+    Height = 25
+    Top = 170
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end
