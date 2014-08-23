@@ -13,9 +13,19 @@ type
   { TfrmMain }
 
   TfrmMain = class(TForm)
-    Button1: TButton;
+    btnBuscar: TButton;
     DBGrid1: TDBGrid;
-    procedure Button1Click(Sender: TObject);
+    lblCedula: TLabel;
+    lblSegNombre: TLabel;
+    lblPriApellido: TLabel;
+    lblSegApellido: TLabel;
+    txtPriNombre: TEdit;
+    lblNombre: TLabel;
+    txtCedula: TEdit;
+    txtSegNombre: TEdit;
+    txtPriApellido: TEdit;
+    txtSegApellido: TEdit;
+    procedure btnBuscarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     Conexion: TConexion;
@@ -33,11 +43,12 @@ implementation
 
 { TfrmMain }
 
-procedure TfrmMain.Button1Click(Sender: TObject);
+procedure TfrmMain.btnBuscarClick(Sender: TObject);
 begin
 
   Conexion.InicializaConexion;
-  DBGrid1.DataSource:=Conexion.EjecutaConsulta('select * from municipio');
+  //DBGrid1.DataSource:=Conexion.EjecutaConsulta('select * from municipio');
+  DBGrid1.DataSource:=conexion.Buscar(txtPriNombre.Text,txtSegNombre.Text,txtPriApellido.Text,txtSegApellido.Text,txtCedula.Text);
 end;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
