@@ -5,6 +5,9 @@ unit u_Conexion;
 interface
 
 uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+   cthreads,
+  {$ENDIF}{$ENDIF}
   Classes, SysUtils, sqldb, DB, sqlite3conn, Forms, Dialogs, LCLType;
 
 type
@@ -49,10 +52,15 @@ end;
 
 function TConexion.EjecutaConsulta(sql: string): TDataSource;
 begin
+  try
   self.omSQLQuery.SQL.Add(sql);
   self.omSQLQuery.Active := True;
-
   Result := omDataSource;
+  except
+    on E: Exception do
+    Application.MessageBox(PChar('Ha ocurrido el siguiente error: ' +
+        E.Message), 'ERROR', MB_OK + MB_ICONERROR);
+  end;
 end;
 
 function TConexion.ArmarConsulta(columnas: array of string; tabla: string;
@@ -108,7 +116,7 @@ function TConexion.Buscar(primer_nombre, segundo_nombre, primer_apellido,
 var
   consulta: string;
   columnas: array [1..5] of string;
-  wheres: array [1..5] of string;
+  wheres: array of string;
 begin
   columnas[1] := 'primer_nombre';
   columnas[2] := 'segundo_nombre';
@@ -116,15 +124,20 @@ begin
   columnas[4] := 'segundo_apellido';
   columnas[5] := 'cedula';
 
-  wheres[1] := ' primer_nombre like ' + QuotedStr('%' + Primer_Nombre + '%');
-  wheres[2] := ' segundo_nombre like ' + QuotedStr('%' + Segundo_Nombre + '%');
-  wheres[3] := ' primer_apellido like ' + QuotedStr('%' + Primer_Apellido + '%');
-  wheres[4] := ' segundo_apellido like ' + QuotedStr('%' + Segundo_Apellido + '%');
-  wheres[5] := ' cedula = ' + QuotedStr('%' + cedula + '%');
-
+  SetLength(wheres,4);
+  wheres[0] := ' primer_nombre like ' + QuotedStr('%' + Primer_Nombre + '%');
+  wheres[1] := ' segundo_nombre like ' + QuotedStr('%' + Segundo_Nombre + '%');
+  wheres[2] := ' primer_apellido like ' + QuotedStr('%' + Primer_Apellido + '%');
+  wheres[3] := ' segundo_apellido like ' + QuotedStr('%' + Segundo_Apellido + '%');
+  if(cedula<>'')then
+  begin
+    SetLength(wheres, 5);
+    wheres[4] := ' cedula = ' + QuotedStr('%' + cedula + '%');
+  end;
   consulta := self.ArmarConsulta(columnas, 'padron', wheres);
 
   //ShowMessage(consulta);
+  writeln(consulta);
   Result := self.EjecutaConsulta(consulta);
   //where := where + ' primer_nombre like ' + QuotedStr('%' + Primer_Nombre + '%');
 end;
