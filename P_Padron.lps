@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="P_Padron.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -13,7 +13,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="15" Y="16"/>
-        <UsageCount Value="38"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -25,9 +25,9 @@
         <UnitName Value="u_FrmMain"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="29"/>
-        <CursorPos X="27" Y="38"/>
-        <UsageCount Value="38"/>
+        <TopLine Value="39"/>
+        <CursorPos X="23" Y="56"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -37,10 +37,10 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="114"/>
-        <CursorPos X="13" Y="135"/>
-        <FoldState Value=" T1iA0A T3iM0k?"/>
-        <UsageCount Value="38"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="305"/>
+        <FoldState Value=" T7DEI011 T8Q24 TM HG41082 T3jK0J112 pibkb0T T1jg0A T0l9220610"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -51,6 +51,14 @@
         <CursorPos X="1" Y="1"/>
         <UsageCount Value="9"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="232"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="11"/>
+      </Unit4>
     </Units>
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
@@ -58,123 +66,123 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="16" Column="5" TopLine="1"/>
+        <Caret Line="121" Column="13" TopLine="54"/>
       </Position1>
       <Position2>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="15" Column="1" TopLine="1"/>
+        <Caret Line="133" Column="21" TopLine="113"/>
       </Position2>
       <Position3>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="18" Column="21" TopLine="13"/>
+        <Caret Line="128" Column="1" TopLine="113"/>
       </Position3>
       <Position4>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="133" Column="21" TopLine="47"/>
+        <Caret Line="129" Column="1" TopLine="113"/>
       </Position4>
       <Position5>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="135" Column="7" TopLine="54"/>
+        <Caret Line="130" Column="1" TopLine="113"/>
       </Position5>
       <Position6>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="133" Column="25" TopLine="113"/>
+        <Caret Line="127" Column="21" TopLine="113"/>
       </Position6>
       <Position7>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="134" Column="12" TopLine="113"/>
+        <Caret Line="128" Column="1" TopLine="113"/>
       </Position7>
       <Position8>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="133" Column="25" TopLine="113"/>
+        <Caret Line="129" Column="1" TopLine="113"/>
       </Position8>
       <Position9>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="134" Column="12" TopLine="113"/>
+        <Caret Line="130" Column="1" TopLine="113"/>
       </Position9>
       <Position10>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="144" Column="1" TopLine="113"/>
+        <Caret Line="131" Column="1" TopLine="113"/>
       </Position10>
       <Position11>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="134" Column="12" TopLine="113"/>
+        <Caret Line="132" Column="1" TopLine="113"/>
       </Position11>
       <Position12>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="121" Column="13" TopLine="54"/>
+        <Caret Line="137" Column="1" TopLine="113"/>
       </Position12>
       <Position13>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="133" Column="21" TopLine="113"/>
+        <Caret Line="140" Column="1" TopLine="114"/>
       </Position13>
       <Position14>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="128" Column="1" TopLine="113"/>
+        <Caret Line="134" Column="24" TopLine="114"/>
       </Position14>
       <Position15>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="129" Column="1" TopLine="113"/>
+        <Caret Line="128" Column="1" TopLine="114"/>
       </Position15>
       <Position16>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="130" Column="1" TopLine="113"/>
+        <Caret Line="129" Column="1" TopLine="114"/>
       </Position16>
       <Position17>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="127" Column="21" TopLine="113"/>
+        <Caret Line="130" Column="1" TopLine="114"/>
       </Position17>
       <Position18>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="128" Column="1" TopLine="113"/>
+        <Caret Line="131" Column="1" TopLine="114"/>
       </Position18>
       <Position19>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="129" Column="1" TopLine="113"/>
+        <Caret Line="132" Column="1" TopLine="114"/>
       </Position19>
       <Position20>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="130" Column="1" TopLine="113"/>
+        <Caret Line="67" Column="20" TopLine="54"/>
       </Position20>
       <Position21>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="131" Column="1" TopLine="113"/>
+        <Caret Line="70" Column="28" TopLine="54"/>
       </Position21>
       <Position22>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="132" Column="1" TopLine="113"/>
+        <Caret Line="67" Column="30" TopLine="54"/>
       </Position22>
       <Position23>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="137" Column="1" TopLine="113"/>
+        <Caret Line="76" Column="32" TopLine="54"/>
       </Position23>
       <Position24>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="140" Column="1" TopLine="114"/>
+        <Caret Line="67" Column="27" TopLine="54"/>
       </Position24>
       <Position25>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="134" Column="24" TopLine="114"/>
+        <Caret Line="142" Column="18" TopLine="131"/>
       </Position25>
       <Position26>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="128" Column="1" TopLine="114"/>
+        <Caret Line="49" Column="39" TopLine="1"/>
       </Position26>
       <Position27>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="129" Column="1" TopLine="114"/>
+        <Caret Line="47" Column="39" TopLine="9"/>
       </Position27>
       <Position28>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="130" Column="1" TopLine="114"/>
+        <Caret Line="58" Column="39" TopLine="37"/>
       </Position28>
       <Position29>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="131" Column="1" TopLine="114"/>
+        <Caret Line="180" Column="19" TopLine="123"/>
       </Position29>
       <Position30>
         <Filename Value="u_conexion.pas"/>
-        <Caret Line="132" Column="1" TopLine="114"/>
+        <Caret Line="41" Column="15" TopLine="14"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>
